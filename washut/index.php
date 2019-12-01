@@ -15,46 +15,46 @@ include('includes/session.php');
 		<link rel="shortcut icon" href="images/logo.ico">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//www.fuelcdn.com/fuelux/3.6.3/css/fuelux.min.css" rel="stylesheet">
+    	<link href="//www.fuelcdn.com/fuelux/3.6.3/css/fuelux.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
 
-	 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#" style="font-weight:bold;"><span><img src="images/logo.png" width="40px" height="25px" style="padding-right:5px;padding-top:0px;" /></span>Washut</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a><i class="fa fa-home fa-fw"></i>Home</a></li>
-        <li><a href="orders/"><i class="fa fa-shopping-cart fa-fw"></i>Order</a></li>
-        <li><a href="order_history/"><i class="fa fa-history fa-fw"></i>Order History</a></li>
-        <li><a href="prices/"><i class="fa fa-tags fa-fw"></i>Prices</a></li>
-        <li><a href="help/"><i class="fa fa-question-circle fa-fw"></i>Help</a></li>
-      </ul>
-    <?php
-	if(!logged_in()):
-	?>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
-      </ul>
-    <?php endif; ?>
-    <?php if(logged_in()): ?>
-    	<ul class="nav navbar-nav navbar-right">
-        <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
-      </ul>
-    <?php endif; ?>
+	<nav class="navbar navbar-default navbar-fixed-top">
+  	<div class="container-fluid">
+    	<div class="navbar-header">
+      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+      		</button>
+      		<a class="navbar-brand" href="#" style="font-weight:bold;"><span><img src="images/logo.png" width="40px" height="25px" style="padding-right:5px;padding-top:0px;" /></span>Washut</a>
+    	</div>
+    	<div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav">
+	        <li class="active"><a><i class="fa fa-home fa-fw"></i>Home</a></li>
+    	    <li><a href="orders/"><i class="fa fa-shopping-cart fa-fw"></i>Order</a></li>
+        	<li><a href="order_history/"><i class="fa fa-history fa-fw"></i>Order History</a></li>
+        	<li><a href="prices/"><i class="fa fa-tags fa-fw"></i>Prices</a></li>
+        	<li><a href="help/"><i class="fa fa-question-circle fa-fw"></i>Help</a></li>
+      	</ul>
+    	<?php
+		if(!logged_in()):
+		?>
+    	  <ul class="nav navbar-nav navbar-right">
+    	    <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login / Sign Up</a></li>
+    	  </ul>
+    	<?php endif; ?>
+    	<?php if(logged_in()): ?>
+    		<ul class="nav navbar-nav navbar-right">
+    	    <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+    	  </ul>
+    	<?php endif; ?>
 
-    </div>
-  </div>
-</nav>
+    	</div>
+  	</div>
+	</nav>
 
 
 		<!-- Header -->
